@@ -238,7 +238,7 @@
     <h3>cms-option-order_by </h3>
     <div class="row">
       <div class="col-6 ">
-        <h4>DESC</h4>
+        <div
           cms-loop
           cms-content-type="article"
           cms-option-order_by="popular"
@@ -413,10 +413,69 @@
   </section>
 
 
-  
-
   <h2>コンテンツ単体埋め込み</h2>
   <h3>id指定</h3>
+
+
+  <section class="bg-white mb-4 p-2">
+    <h3>デフォルトのコンテンツアイテム埋め込み</h3>
+    <div class="row">
+      <div class="col-md-6 ">
+        <article
+          cms-item
+          cms-content-type="all-field"
+          cms-content="c-AXNEPDF5paTKVLeqvCiQ"
+          class="bg-light p-3 mb-2"
+        >
+          <!-- text -->
+          <p>{%= all-field_text %}</p>
+          <!-- date -->
+          <p>{%= all-field_date %}</p>
+          <!-- number -->
+          <p>{%= all-field_number %}</p>
+          <!-- rich_text -->
+          <div>{%= all-field_rich_text %}</div>
+          <!-- ref-content -->
+          <div class="bg-white p-3 mb-3">
+            <h4>ref content</h4>
+            <!-- text -->
+            <p>{%= all-field_ref_text %}</p>
+            <!-- date -->
+            <p>{%= all-field_ref_date %}</p>
+            <!-- number -->
+            <p>{%= all-field_ref_number %}</p>
+            <!-- rich_text -->
+            <div>{%= all-field_ref_rich_text %}</div>
+            <!-- image -->
+            <img src="{%= all-field_ref_image %}" alt=""/>
+            <div style="background: url('{%= all-field_ref_image %}');"></div>
+            <!-- map -->
+            <iframe src="https://maps.google.co.jp/maps?output=embed&ie=utf8&t=m&hl=ja&z=18&q={%= all-field_ref_map_#address %}" frameborder="0" scrolling="no" width="auto" loading="lazy">></iframe>
+            <p>住所(エンコード): {%= all-field_ref_map_#address %}</p>
+            <p>住所: {%= all-field_ref_map_#address_decoded %}</p>
+            <!-- tag -->
+            <p>{%= all-field_ref_tag %}</p>
+          </div>
+
+          <!-- map -->
+          <iframe src="https://maps.google.co.jp/maps?output=embed&ie=utf8&t=m&hl=ja&z=18&q={%= all-field_map_#address %}" frameborder="0" scrolling="no" width="auto" loading="lazy">></iframe>
+          <p>住所(エンコード): {%= all-field_map_#address %}</p>
+          <p>住所: {%= all-field_map_#address_decoded %}</p>
+
+          <!-- image -->
+          <img src="{%= all-field_image %}" alt= ""/>
+          <div style="background: url('{%= all-field_image %}');"></div>
+
+          <!-- tag -->
+          <p>{%= all-field_tag %}</p>
+
+        </article>
+      </div>
+      <div class="col-6"></div>
+    </div>
+  </section>
+
+
   <h3>urlのpramater</h3>
   <h2>参照コンテンツ</h2>
   <h2>フォーム</h2>
