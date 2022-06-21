@@ -40,26 +40,34 @@
           <!-- rich_text -->
           <div>{%= all-field_rich_text %}</div>
           <!-- ref-content -->
-          <div class="bg-white p-3 mb-3">
-            <h4>ref content</h4>
-            <!-- text -->
-            <p>{%= all-field_ref_text %}</p>
-            <!-- date -->
-            <p>{%= all-field_ref_date %}</p>
-            <!-- number -->
-            <p>{%= all-field_ref_number %}</p>
-            <!-- rich_text -->
-            <div>{%= all-field_ref_rich_text %}</div>
-            <!-- image -->
-            <img src="{%= all-field_ref_image %}" alt=""/>
-            <div style="background: url('{%= all-field_ref_image %}');"></div>
-            <!-- map -->
-            <iframe src="https://maps.google.co.jp/maps?output=embed&ie=utf8&t=m&hl=ja&z=18&q={%= all-field_ref_map_#address %}" frameborder="0" scrolling="no" width="auto" loading="lazy">></iframe>
-            <p>住所(エンコード): {%= all-field_ref_map_#address %}</p>
-            <p>住所: {%= all-field_ref_map_#address_decoded %}</p>
-            <!-- tag -->
-            <p>{%= all-field_ref_tag %}</p>
+          <div class="ref-wrepper bg-white p-3 mb-3">
+            <div
+              cms-loop
+              cms-field="ref"
+              cms-item-variable="foo"
+            >
+              <h4>ref content</h4>
+              <!-- text -->
+              <p>{%= foo_text %}</p>
+              <!-- date -->
+              <p>{%= all-field_ref_date %}</p>
+              <!-- number -->
+              <p>{%= all-field_ref_number %}</p>
+              <!-- rich_text -->
+              <div>{%= all-field_ref_rich_text %}</div>
+              <!-- image -->
+              <img src="{%= all-field_ref_image %}" alt=""/>
+              <div style="background: url('{%= all-field_ref_image %}');"></div>
+              <!-- map -->
+              <iframe src="https://maps.google.co.jp/maps?output=embed&ie=utf8&t=m&hl=ja&z=18&q={%= all-field_ref_map_#address %}" frameborder="0" scrolling="no" width="auto" loading="lazy">></iframe>
+              <p>住所(エンコード): {%= all-field_ref_map_#address %}</p>
+              <p>住所: {%= all-field_ref_map_#address_decoded %}</p>
+              <!-- tag -->
+              <p>{%= all-field_ref_tag %}</p>
+            </div>
           </div>
+            
+          
 
           <!-- map -->
           <iframe src="https://maps.google.co.jp/maps?output=embed&ie=utf8&t=m&hl=ja&z=18&q={%= all-field_map_#address %}" frameborder="0" scrolling="no" width="auto" loading="lazy">></iframe>
