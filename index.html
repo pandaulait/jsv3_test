@@ -17,16 +17,35 @@
     section{
       margin-left: 10px;
     }
-    h2 {
-      margin: 20px 0px;
-    }
+
   </style>
   <h1 class="mt-3">検査項目</h1>
-  <h2>コンテンツリスト</h2>
+  <a href="#content-list"><b>-コンテンツリスト</b></a><br>
+    <a href="#option-1">-デフォルトのコンテンツリスト埋め込み</a><br>
+    <a href="#option-2">- Pagenation</a><br>
+    <a href="#option-3">- cms-item-perpage</a><br>
+    <a href="#option-4">- cms-option-limit</a><br>
+    <a href="#option-5">- cms-option-offset</a><br>
+    <a href="#option-6">- cms-option-order_direction=desc</a><br>
+    <a href="#option-7">- cms-option-order_direction=asc</a><br>
+    <a href="#option-8">- cms-option-order_by</a><br>
+    <a href="#option-9">- cms-option-order_by_title</a><br>
+    <a href="#option-10">- cms-option-filter_by_title</a><br>
+    <a href="#option-11">- cms-option-filter_ref</a><br>
+    <a href="#option-12">- cms-option-range_from</a><br>
+    <a href="#option-13">- cms-option-range_to</a><br>
+  <a href="#content-item"><b>コンテンツアイテム</b></a><br>
+    <a href="#option-14">- デフォルトのコンテンツアイテム埋め込み</a><br>
+    <a href="#option-15">- urlのpramaterでcontent_itemのidを指定する</a><br>
+  <a href="#content-ref"><b>参照コンテンツ</b></a><br>
+  <a href="#content-search"><b>検索機能</b></a><br>
+    <a href="/input.html">- 検索結果と検索欄が別ページ</a><br>
+    <a href="/search.html">- 一枚に同じ検索欄と検索結果</a><br>
+  <h2 id="content-list">コンテンツリスト</h2>
 
 
   <section class="bg-white mb-4 p-2">
-    <h3>デフォルトのコンテンツリスト埋め込み</h3>
+    <h3 id="option-1">デフォルトのコンテンツリスト埋め込み</h3>
     <div class="row">
       <div class="col-6 ">
         <article
@@ -46,14 +65,15 @@
           <a href="{%= article_#url %}">単体ページへのリンク</a> -->
         </article>
       </div>
-      <div class="col-6"></div>
+      <div class="col-6">
+      </div>
     </div>
   </section>
 
 
 
   <section class="bg-white mb-4 p-2">
-    <h3>Pagenation</h3>
+    <h3 id="option-2">Pagenation</h3>
     <div class="row">
       <div class="col-6 ">
         <article
@@ -95,7 +115,7 @@
 
 
   <section class="bg-white mb-4 p-2">
-    <h3>cms-item-perpage</h3>
+    <h3 id="option-3">cms-item-perpage</h3>
     <div class="row">
       <div class="col-6 ">
         <article
@@ -122,7 +142,7 @@
 
 
   <section class="bg-white mb-4 p-2">
-    <h3>cms-option-limit</h3>
+    <h3 id="option-4">cms-option-limit</h3>
     <div class="row">
       <div class="col-6 ">
         <article
@@ -149,7 +169,7 @@
 
 
   <section class="bg-white mb-4 p-2">
-    <h3>cms-option-offset</h3>
+    <h3 id="option-5">cms-option-offset</h3>
     <div class="row">
       <div class="col-6 ">
         <article
@@ -178,7 +198,7 @@
 
 
   <section class="bg-white mb-4 p-2">
-    <h3>cms-option-order_direction=desc</h3>
+    <h3 id="option-6">cms-option-order_direction=desc</h3>
     <div class="row">
       <div class="col-6 ">
         <h4>DESC</h4>
@@ -208,7 +228,7 @@
 
 
   <section class="bg-white mb-4 p-2">
-    <h3>cms-option-order_direction=asc</h3>
+    <h3  id="option-7">cms-option-order_direction=asc</h3>
     <div class="row">
       <div class="col-6 ">
         <h4>ASC</h4>
@@ -238,7 +258,7 @@
 
 
   <section class="bg-white mb-4 p-2">
-    <h3>cms-option-order_by </h3>
+    <h3  id="option-8">cms-option-order_by </h3>
     <div class="row">
       <div class="col-6 ">
         <div
@@ -266,7 +286,7 @@
   </section>
 
   <section class="bg-white mb-4 p-2">
-    <h3>cms-option-order_by_title</h3>
+    <h3 id="option-9">cms-option-order_by_title</h3>
     <div class="row">
       <div class="col-6 ">
         <article
@@ -295,7 +315,7 @@
 
 
   <section class="bg-white mb-4 p-2">
-    <h3>cms-option-filter_by_title</h3>
+    <h3  id="option-10">cms-option-filter_by_title</h3>
     <div class="row">
       <div class="col-6 ">
         <article
@@ -326,7 +346,7 @@
 
 
   <section class="bg-white mb-4 p-2">
-    <h3>cms-option-filter_ref</h3>
+    <h3  id="option-11">cms-option-filter_ref</h3>
     <div class="row">
       <div class="col-6 ">
         <article
@@ -357,7 +377,7 @@
 
 
   <section class="bg-white mb-4 p-2">
-    <h3>cms-option-range_from</h3>
+    <h3 id="option-12">cms-option-range_from</h3>
     <div class="row">
       <div class="col-6 ">
         <article
@@ -387,7 +407,7 @@
 
 
   <section class="bg-white mb-4 p-2">
-    <h3>cms-option-range_to</h3>
+    <h3  id="option-13">cms-option-range_to</h3>
     <div class="row">
       <div class="col-6 ">
         <article
@@ -416,12 +436,12 @@
   </section>
 
 
-  <h2>コンテンツ単体埋め込み</h2>
+  <h2 id="content-item">コンテンツ単体埋め込み</h2>
   <h3>id指定</h3>
 
 
   <section class="bg-white mb-4 p-2">
-    <h3>デフォルトのコンテンツアイテム埋め込み</h3>
+    <h3  id="option-14">デフォルトのコンテンツアイテム埋め込み</h3>
     <div class="row">
       <div class="col-md-6 ">
         <article
@@ -479,27 +499,20 @@
   </section>
 
 
-  <h3>urlのpramater</h3>
-    http://127.0.0.1:5500
+  <h3 id="option015">urlのpramaterでcontent_itemのidを指定する</h3>
     <a href="/content_item.html?contentId=c-AXNEPDF5paTKVLeqvCiQ">ここで確認する</a>
-  <h2>参照コンテンツ</h2>
+  <h2 id="content-ref">参照コンテンツ</h2>
     <a href="/content_item.html?contentId=c-AXNEPDF5paTKVLeqvCiQ">ここで確認する</a>
   <h2>フォーム</h2>
 
-  <h2>検索機能</h2>
-
+  <h2 id="content-search">検索機能</h2>
+    <a href="/input.html">検索結果と検索欄が別ページ</a>
+    <a href="/search.html">一枚に同じ検索欄と検索結果</a>
   <h2>インデックス機能</h2>
 
-  <button
-    cms-next-button
-    cms-loop-id="sample-loop"
-  >
-    次ページ
-  </button>
 
-  <button>前ページ</button>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </html>
 </body>
-</html>
