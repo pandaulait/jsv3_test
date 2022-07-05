@@ -32,7 +32,7 @@
     <a href="#option-7">- cms-option-order_direction=asc</a><br>
     <a href="#option-8">- cms-option-order_by</a><br>
     <a href="#option-9">- cms-option-order_by_title</a><br>
-    <a href="#option-10">- cms-option-filter_by_title</a><br>
+    <a href="#option-10">- cms-option-filter_by="title",cms-option-filter_value="content1"</a><br>
     <a href="#option-11">- cms-option-filter_ref</a><br>
     <a href="#option-12">- cms-option-range_from</a><br>
     <a href="#option-13">- cms-option-range_to</a><br>
@@ -122,7 +122,7 @@
         <article
           cms-loop
           cms-content-type="article"
-          cms-item-perpage="2"
+          cms-per-page="3"
         >
           <!-- タイトル -->
           <h1>{%= article_title %}</h1>
@@ -316,7 +316,7 @@
 
 
   <section class="bg-white mb-4 p-2">
-    <h3  id="option-10">cms-option-filter_by_title</h3>
+    <h3  id="option-10">cms-option-filter_by="title",cms-option-filter_value="content1"</h3>
     <div class="row">
       <div class="col-md-6 ">
         <article
@@ -355,7 +355,7 @@
           cms-content-type="article"
           cms-option-filter-ref="writer"
           cms-option-filter_by="title"
-          cms-option-filter_value="1"
+          cms-option-filter_value="ユーザー２"
           cms-option-limit="10"
           class="bg-light p-3 mb-2"
         >
@@ -372,7 +372,7 @@
           <a href="{%= article_#url %}">単体ページへのリンク</a> -->
         </article>
       </div>
-      
+
     </div>
   </section>
 
@@ -401,7 +401,6 @@
           <a href="{%= article_#url %}">単体ページへのリンク</a> -->
         </article>
       </div>
-      
     </div>
   </section>
 
